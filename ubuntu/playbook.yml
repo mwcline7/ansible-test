@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  become: yes
+
+  tasks:
+    - name: Install latest version of php7.2-cli
+      apt:
+        name: php7.2-cli
+        state: latest
+        install_recommends: yes
