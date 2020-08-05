@@ -1,9 +1,9 @@
 ---
 - hosts: localhost
-  become: yes
 
   tasks:
     - name: Install latest version of php7.2-cli
+      become: yes
       apt:
         name: php7.2-cli
         state: latest
